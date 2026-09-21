@@ -1,0 +1,26 @@
+body{
+    background-color:#FFFDE7;
+    border:2px solid #9E9E9E ;
+    text-align:center;
+}
+h1{
+    color:#D40000;
+    background-color:#FFD9E6 ;
+}
+.kho1{
+    color:#0033CC;
+    font-style:italic;
+}
+.kho2{
+    color:#D40000 ;
+    font-style:italic;
+}
+.kho3{
+    color:#0033CC;
+    font-style:italic;
+}
+hr{
+    background-color: #0033CC ;
+    width:55%;
+    margin: 20px auto;
+}
