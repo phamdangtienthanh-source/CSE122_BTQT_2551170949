@@ -1,0 +1,138 @@
+/* 1. Khai báo biến màu sắc trong :root (Chế độ Sáng) */
+:root {
+    --nen: #f4f6f8;
+    --chu: #1e293b;
+    --the: #ffffff;
+    --vien: #e2e8f0;
+    --nhan: #2563eb;
+    --nut-nen: #cbd5e1;
+    --nut-nhan: #ffffff;
+}
+
+/* 2. Ghi đè biến màu khi <body> có class .toi (Chế độ Tối) */
+body.toi {
+    --nen: #0f172a;
+    --chu: #e2e8f0;
+    --the: #1e293b;
+    --vien: #334155;
+    --nhan: #60a5fa;
+    --nut-nen: #2563eb;
+    --nut-nhan: #ffffff;
+}
+
+/* 3. Style cơ bản và chuyển màu mượt (transition) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--nen);
+    color: var(--chu);
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* Hiệu ứng chuyển màu mượt cho màu nền và màu chữ */
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Header & Tiêu đề */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.main-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--chu);
+    transition: color 0.4s ease;
+}
+
+/* Thẻ thông tin */
+.card {
+    background-color: var(--the);
+    border: 1px solid var(--vien);
+    border-radius: 10px;
+    padding: 16px 20px;
+    transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+.card-title {
+    color: var(--nhan);
+    font-size: 1.05rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    transition: color 0.4s ease;
+}
+
+.card-desc {
+    color: var(--chu);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    opacity: 0.85;
+    transition: color 0.4s ease;
+}
+
+.status-text {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: 4px;
+    transition: color 0.4s ease;
+}
+
+/* Nút gạt (Toggle Switch) */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--nut-nen);
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: var(--nut-nhan);
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
