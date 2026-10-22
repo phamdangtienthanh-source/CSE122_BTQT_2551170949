@@ -1,0 +1,69 @@
+body {
+    font-family: Times New Roman;
+    background-color: #F8F8F8;
+    margin: 0;
+    padding: 0px;
+}
+.container {
+    background-color: #FFF8E7;
+    padding: 40px 50px;
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+.title {
+    color: #E65100;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: bold;
+}
+.content {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+.cot-trai {
+    width: 35%;
+}
+.cot-trai img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+.cot-phai {
+    flex-grow: 1;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    font-size: 22px;
+}
+th {
+    background-color: #E65100;
+    color: #FFFFFF;
+    padding: 15px;
+    font-weight: bold;
+}
+td {
+    padding: 15px;
+    color: #333333;
+    border-bottom: 1px solid #E0D6C2;
+}
+.cot-stt {
+    width: 70px;
+    text-align: center;
+}
+.cot-name {
+    text-align: left;
+}
+tbody tr:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+tbody tr:nth-child(even) {
+    background-color: #FDF8EF;
+}
