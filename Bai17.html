@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 17 - Kiểm tra biểu mẫu bằng JavaScript</title>
+    <link rel="stylesheet" href="stylebai17.css">
+</head>
+<body>
+
+    <div class="form-wrapper">
+        <form id="registerForm" class="register-form" novalidate>
+            <h2>Đăng ký tài khoản</h2>
+            <p class="subtitle">Dữ liệu được kiểm tra bằng JavaScript trước khi gửi.</p>
+
+            <!-- Họ và tên -->
+            <div class="form-group">
+                <label for="fullname">Họ và tên</label>
+                <input type="text" id="fullname" placeholder="Nhập họ và tên">
+                <div class="message" id="fullnameMessage"></div>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Nhập email">
+                <div class="message" id="emailMessage"></div>
+            </div>
+
+            <!-- Mật khẩu -->
+            <div class="form-group">
+                <label for="password">Mật khẩu</label>
+                <input type="password" id="password" placeholder="Nhập mật khẩu">
+                <div class="message" id="passwordMessage"></div>
+            </div>
+
+            <!-- Xác nhận mật khẩu -->
+            <div class="form-group">
+                <label for="confirmPassword">Xác nhận mật khẩu</label>
+                <input type="password" id="confirmPassword" placeholder="Nhập lại mật khẩu">
+                <div class="message" id="confirmPasswordMessage"></div>
+            </div>
+
+            <!-- Nút Đăng ký -->
+            <button type="submit" class="btn-submit">Đăng ký</button>
+        </form>
+    </div>
+
+    <script src="bai17.js"></script>
+</body>
+</html>

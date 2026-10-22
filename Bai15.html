@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 15 - Máy tính đơn giản</title>
+    <link rel="stylesheet" href="stylebai15.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <!-- Màn hình hiển thị -->
+        <div class="display">
+            <div id="expression" class="expression"></div>
+            <div id="result" class="result">0</div>
+        </div>
+
+        <!-- Bàn phím lưới 4x5 -->
+        <div class="keypad">
+            <!-- Hàng 1 -->
+            <button class="btn btn-clear" onclick="clearAll()">C</button>
+            <button class="btn btn-operator" onclick="appendInput('()')">( )</button>
+            <button class="btn btn-operator" onclick="appendInput('%')">%</button>
+            <button class="btn btn-operator" onclick="appendInput('÷')">÷</button>
+
+            <!-- Hàng 2 -->
+            <button class="btn btn-num" onclick="appendInput('7')">7</button>
+            <button class="btn btn-num" onclick="appendInput('8')">8</button>
+            <button class="btn btn-num" onclick="appendInput('9')">9</button>
+            <button class="btn btn-operator" onclick="appendInput('×')">×</button>
+
+            <!-- Hàng 3 -->
+            <button class="btn btn-num" onclick="appendInput('4')">4</button>
+            <button class="btn btn-num" onclick="appendInput('5')">5</button>
+            <button class="btn btn-num" onclick="appendInput('6')">6</button>
+            <button class="btn btn-operator" onclick="appendInput('-')">-</button>
+
+            <!-- Hàng 4 -->
+            <button class="btn btn-num" onclick="appendInput('1')">1</button>
+            <button class="btn btn-num" onclick="appendInput('2')">2</button>
+            <button class="btn btn-num" onclick="appendInput('3')">3</button>
+            <button class="btn btn-operator" onclick="appendInput('+')">+</button>
+
+            <!-- Hàng 5 -->
+            <button class="btn btn-num btn-zero" onclick="appendInput('0')">0</button>
+            <button class="btn btn-num" onclick="appendInput('.')">.</button>
+            <button class="btn btn-equals" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="bai15.js"></script>
+</body>
+</html>

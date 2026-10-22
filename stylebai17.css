@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #fcf8f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.form-wrapper {
+    background-color: #fff8f0;
+    padding: 25px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 480px;
+}
+
+.register-form {
+    background-color: #FFFFFF;
+    border: 2px solid #fed7aa;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.register-form h2 {
+    color: #c2410c;
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.register-form .subtitle {
+    color: #71717a;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #3f3f46;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 15px;
+    border: 1.5px solid #d4d4d8;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.form-group.invalid input {
+    border-color: #dc2626 !important;
+}
+
+.form-group.valid input {
+    border-color: #16a34a !important;
+}
+
+.message {
+    font-size: 13px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.form-group.invalid .message {
+    color: #dc2626;
+}
+
+.form-group.valid .message {
+    color: #16a34a;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #c2410c;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #9a3412;
+}
